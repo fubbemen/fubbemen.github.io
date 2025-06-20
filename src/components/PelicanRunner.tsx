@@ -29,7 +29,7 @@ const PelicanRunner = () => {
     if (gameState !== 'playing') return;
     if (!isJumping) {
       setIsJumping(true);
-      velocityRef.current = -12;
+      velocityRef.current = -15; // Increased from -12 to -15 for higher jumps
     }
   }, [gameState, isJumping]);
 
